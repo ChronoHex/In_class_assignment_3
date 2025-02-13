@@ -21,11 +21,17 @@ let inventory = {
     },
     removeLatestItem() {
             this.items.pop();
+    },
+    removeFirstItem() {
+        this.items.shift();
     }
 };
 
 inventory.addItem("Monitor", 5);
 inventory.addItem("Keyboard", 10);
+inventory.addItem("Mouse", 3);
 console.log(inventory.items);
-inventory.removeLatestItem()
+inventory.removeLatestItem();
+console.log(inventory.items);
+inventory.removeFirstItem();
 console.log(inventory.items);
