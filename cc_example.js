@@ -11,3 +11,16 @@ function findOrders(orders, orderId) {
 }
 
 console.log(findOrders(orders, 101))
+
+// task 6
+
+let invetory = {
+    items:[],
+    addItem(name, quantity) {
+        this.items.push ({name, quantity});
+    }
+};
+
+invetory.addItem("Monitor", 5);
+invetory.addItem("Keyboard", 10);
+console.log(invetory.items);
