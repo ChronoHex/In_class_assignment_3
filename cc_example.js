@@ -30,8 +30,27 @@ let inventory = {
 inventory.addItem("Monitor", 5);
 inventory.addItem("Keyboard", 10);
 inventory.addItem("Mouse", 3);
+
 console.log(inventory.items);
+
 inventory.removeLatestItem();
+
 console.log(inventory.items);
+
 inventory.removeFirstItem();
+
 console.log(inventory.items);
+
+// task 7
+
+let employees = [
+    {name: "Alice", position: "Developer", salary: 70000},
+    {name: "Bob", position: "Designer", salary: 60000},
+    {name: "Charlie", position: "Manager", salary: 90000}
+];
+
+function findEmployee(employees, name) {
+    return employees.find(employee => employee.name === name)
+};
+
+console.log(findEmployee(employees, "Charlie"))
